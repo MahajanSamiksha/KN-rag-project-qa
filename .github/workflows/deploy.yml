@@ -113,8 +113,8 @@ jobs:
                     "LOG_LEVEL": "INFO",
                     "LANGSMITH_TRACING": "true",
                     "LANGSMITH_API_KEY": "${{ secrets.LANGSMITH_API_KEY }}",
-                    "LANGSMITH_PROJECT": "KN-rag-qa-production",
-                    "LANGSMITH_ENDPOINT": "https://eu.api.smith.langchain.com"
+                    "LANGSMITH_PROJECT": "rag-qa-production",
+                    "LANGSMITH_ENDPOINT": "hhttps://eu.api.smith.langchain.com"
                   }
                 }
               },
@@ -158,13 +158,13 @@ jobs:
                 "ImageConfiguration": {
                   "Port": "8000",
                   "RuntimeEnvironmentVariables": {
-                    "OPENAI_API_KEY": "${{ secrets.OPENAI_API_KEY }}",
+                    "GOOGLEAI_API_KEY": "${{ secrets.GOOGLEAI_API_KEY }}",
                     "QDRANT_URL": "${{ secrets.QDRANT_URL }}",
                     "QDRANT_API_KEY": "${{ secrets.QDRANT_API_KEY }}",
                     "LOG_LEVEL": "INFO",
                     "LANGSMITH_TRACING": "true",
                     "LANGSMITH_API_KEY": "${{ secrets.LANGSMITH_API_KEY }}",
-                    "LANGSMITH_PROJECT": "rag-qa-production-system",
+                    "LANGSMITH_PROJECT": "rag-qa-production",
                     "LANGSMITH_ENDPOINT": "https://eu.api.smith.langchain.com"
                   }
                 }
