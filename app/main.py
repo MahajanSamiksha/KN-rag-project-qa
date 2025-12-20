@@ -5,8 +5,6 @@
 # ruff: noqa: E402, I001
 from dotenv import load_dotenv
 
-load_dotenv()
-
 from contextlib import asynccontextmanager
 
 from fastapi import FastAPI, Request
@@ -19,6 +17,7 @@ from app.api.routes import documents, health, query
 from app.config import get_settings
 from app.utils.logger import get_logger, setup_logging
 
+load_dotenv()
 settings = get_settings()
 
 

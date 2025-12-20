@@ -3,6 +3,7 @@
 from functools import lru_cache
 from typing import Any
 from uuid import uuid4
+from dotenv import load_dotenv
 
 from langchain_core.documents import Document
 from langchain_qdrant import QdrantVectorStore
@@ -14,6 +15,7 @@ from app.config import get_settings
 from app.core.embeddings import get_embeddings
 from app.utils.logger import get_logger
 
+load_dotenv()
 logger = get_logger(__name__)
 settings = get_settings()
 

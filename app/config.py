@@ -16,7 +16,9 @@ class Settings(BaseSettings):
     )
 
     # OpenAI Configuration
-    openai_api_key: str
+    #openai_api_key: str
+    googleai_api_key: str
+
 
     # Qdrant Cloud Configuration
     qdrant_url: str
